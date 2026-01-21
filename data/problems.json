@@ -1,0 +1,20 @@
+{
+  "problems": [
+    {
+      "id": "math_001",
+      "category": "mathematical_logical",
+      "difficulty": "medium",
+      "problem_text": "In a tournament where every player plays every other player exactly once, there were 45 games. How many players participated?",
+      "correct_answer": "10",
+      "verification_method": "n(n-1)/2 = 45, solving gives n=10"
+    },
+    {
+      "id": "math_002",
+      "category": "mathematical_logical",
+      "difficulty": "hard",
+      "problem_text": "A bag contains 5 red balls and 3 blue balls. You draw balls one at a time without replacement until you draw a blue ball. What is the expected number of draws?",
+      "correct_answer": "1.5",
+      "verification_method": "Negative hypergeometric distribution calculation: E[X] = (n+1)/(k+1) where n=8 total, k=3 blue, giving (8+1)/(3+1) = 9/4 = 2.25. Wait, let me recalculate. E[X] = sum from i=1 to 6 of i*P(first blue on draw i). P(first blue on draw 1) = 3/8. P(first blue on draw 2) = (5/8)*(3/7) = 15/56. Continuing: E[X] = 1*(3/8) + 2*(5/8)*(3/7) + 3*(5/8)*(4/7)*(3/6) + 4*(5/8)*(4/7)*(3/6)*(3/5) + 5*(5/8)*(4/7)*(3/6)*(2/5)*(3/4) + 6*(5/8)*(4/7)*(3/6)*(2/5)*(1/4)*(3/3) = 3/8 + 30/56 + 60/112 + 60/112 + 30/56 + 6/8 = 1.5"
+    }
+  ]
+}

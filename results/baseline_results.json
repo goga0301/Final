@@ -1,0 +1,104 @@
+{
+  "single_llm": {
+    "gpt4": {
+      "correct": 1,
+      "total": 2,
+      "answers": [
+        {
+          "problem_id": "math_001",
+          "answer": "10",
+          "correct": true
+        },
+        {
+          "problem_id": "math_002",
+          "answer": "9/4",
+          "correct": false
+        }
+      ],
+      "accuracy": 0.5
+    },
+    "claude": {
+      "correct": 0,
+      "total": 2,
+      "answers": [
+        {
+          "problem_id": "math_001",
+          "answer": "7 players.",
+          "correct": false
+        },
+        {
+          "problem_id": "math_002",
+          "answer": "REASONING: The expected number of draws until a blue ball is drawn is 8/3.",
+          "correct": false
+        }
+      ],
+      "accuracy": 0.0
+    },
+    "gemini": {
+      "correct": 1,
+      "total": 2,
+      "answers": [
+        {
+          "problem_id": "math_001",
+          "answer": "10",
+          "correct": true
+        },
+        {
+          "problem_id": "math_002",
+          "answer": "- P(X=2): The first ball is red",
+          "correct": false
+        }
+      ],
+      "accuracy": 0.5
+    },
+    "grok": {
+      "correct": 1,
+      "total": 2,
+      "answers": [
+        {
+          "problem_id": "math_001",
+          "answer": "10",
+          "correct": true
+        },
+        {
+          "problem_id": "math_002",
+          "answer": "2.25",
+          "correct": false
+        }
+      ],
+      "accuracy": 0.5
+    }
+  },
+  "voting": {
+    "correct": 1,
+    "total": 2,
+    "answers": [
+      {
+        "problem_id": "math_001",
+        "individual_answers": [
+          "10",
+          "9 players participated in the tournament.",
+          "10"
+        ],
+        "majority_answer": "10",
+        "correct": true
+      },
+      {
+        "problem_id": "math_002",
+        "individual_answers": [
+          "\\(\\frac{121}{56}\\)",
+          "The expected number of draws until a blue ball is drawn is 2.",
+          "P(X = 1) = 3/8 = 21/56"
+        ],
+        "majority_answer": "\\(\\frac{121}{56}\\)",
+        "correct": false
+      }
+    ],
+    "voters": [
+      "gpt4",
+      "claude",
+      "gemini"
+    ],
+    "accuracy": 0.5
+  }
+}
